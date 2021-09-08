@@ -14,17 +14,39 @@
 # 3
 
 # solution1
+# n = int(input())
+# l = list(map(int, input().split()))
+# sosuCount = 0
+
+# for i in l:
+#     count = 0
+#     if i == 1:
+#         continue
+#     for j in range(2, i+1):
+#         if i % j == 0:
+#             count += 1
+#     if count == 1:
+#         sosuCount += 1
+# print(sosuCount)
+
+# solution2
 n = int(input())
 l = list(map(int, input().split()))
-sosuCount = 0
 
+
+def prime(n):
+    if n == 1:
+        return False
+    elif n == 2:
+        return True
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+
+count = 0
 for i in l:
-    count = 0
-    if i == 1:
-        continue
-    for j in range(2, i+1):
-        if i % j == 0:
-            count += 1
-    if count == 1:
-        sosuCount += 1
-print(sosuCount)
+    if prime(i):
+        count += 1
+print(count)
