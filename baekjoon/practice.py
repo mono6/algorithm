@@ -67,3 +67,28 @@ print(int('0x3c', 16))
 
 # 배열의 원소가 한개가 아닌 리스트인 경우
 # arr.sort(key=lambda x:(x[0], x[1]))
+
+# 순열, 조합
+# 1-1 순수한 방법
+# for문 2개 사용해서 nC2 구하는 방법.... nC3, nC4는 한계가 있다.
+# for i in range(0, n-1):
+#     for j in range(i+1, n):
+#         print(i, j)
+
+# 1-2 itertools을 사용한 조합
+# combinations의 첫번째 인자에 배열을 넣고 두번째 인자에는 nCm이라면 m에 해당하는값을 넣는다.
+# from itertools import combinations
+# a = list(combinations([1,2,3,4],3))
+
+# print(a)
+
+# 1-3 순열
+# 1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열
+
+# from itertools import permutations
+
+# N, M = map(int, input().split())
+# arr = [str(i+1) for i in range(N)]
+
+# for e in list(permutations(arr, M)):
+#     print(" ".join(e))
