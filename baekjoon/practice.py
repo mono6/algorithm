@@ -92,3 +92,6 @@ print(int('0x3c', 16))
 
 # for e in list(permutations(arr, M)):
 #     print(" ".join(e))
+
+# 2 빈도계산
+# 백준 2592, 1157번

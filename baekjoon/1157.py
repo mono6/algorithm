@@ -25,6 +25,17 @@
 # A
 
 # solution
+from collections import Counter
+arr = list(input().upper())
+val = Counter(arr).most_common()
+if len(arr) == 1:
+    print(arr[0])
+elif val[0][1] == val[1][1]:
+    print('?')
+else:
+    print(val[0][0])
+
+# solution2
 a = input().upper()
 unique_a = list(set(a))
 count_list = []
