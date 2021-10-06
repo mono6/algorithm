@@ -9,18 +9,18 @@
 
 # 진법
 # 2-1 10진수 -> 2,8,16진수 변환
-print(bin(42))
+# print(bin(42))
 # 0b101010
-print(oct(42))
+# print(oct(42))
 # 0o52
-print(hex(42))
+# print(hex(42))
 # 0x2a
 
 # 2-2 2,8,16진수 -> 10진수 변환
 # 60
-print(int('0b111100', 2))
-print(int('0o74', 8))
-print(int('0x3c', 16))
+# print(int('0b111100', 2))
+# print(int('0o74', 8))
+# print(int('0x3c', 16))
 
 # 2-3 진법 연산 문제
 # 2진수 덧셈
@@ -95,3 +95,18 @@ print(int('0x3c', 16))
 
 # 2 빈도계산
 # 백준 2592, 1157번
+# 3 힙
+# heapq.heappush(heap, item) : item을 heap에 추가
+# heapq.heappop(heap) : heap에서 가장 작은 운서로르 pop & 리턴. 비어있는경우 indexError 호출됨
+# heapq.heapify(x): 리스트 x를 즉각적으로 heap으로 변환함
+# 최대힙
+# 파이썬의 heapq 모듈은 최소 힙으로 구현되어 있기 때문에 최대 힙 구현을 위해서는 트릭이 필요하다.
+# IDEA: y = -x 변환을 하면 최솟값 정렬이 최댓값 정렬로 바뀐다
+
+# heap_items = [1,3,5,7,9]
+
+# max_heap = []
+# for item in heap_items:
+#   heapq.heappush(max_heap, (-item, item))
+# max_item = heapq.heappop(max_heap)[1]
+# print(max_item)
