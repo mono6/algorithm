@@ -96,6 +96,7 @@
 # 2 빈도계산
 # 백준 2592, 1157번
 # 3 힙
+# 11279, 1927, 11286 번
 # heapq.heappush(heap, item) : item을 heap에 추가
 # heapq.heappop(heap) : heap에서 가장 작은 운서로르 pop & 리턴. 비어있는경우 indexError 호출됨
 # heapq.heapify(x): 리스트 x를 즉각적으로 heap으로 변환함
