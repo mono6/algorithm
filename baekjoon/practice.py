@@ -113,16 +113,16 @@
 # print(max_item)
 
 # 4 덱
-from collections import deque
-
-deq = deque([i for i in range(1, 7)])
-print(deq)
+# 10866,10828, 1158 번
+# from collections import deque
+# deq = deque([i for i in range(1, 7)])
+# print(deq)
 # deq.appendleft(10)
 # print(deq)
 # deq.append(-10)
 # print(deq)
 # print(deq.pop())
 # deq.append(-10)
-print(deq.popleft())
-deq.rotate(-1)
-print(deq)
+# print(deq.popleft())
+# deq.rotate(-1)
+# print(deq)
