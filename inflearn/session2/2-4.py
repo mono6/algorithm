@@ -19,7 +19,10 @@
 # solution
 n = int(input())
 a = list(map(int, input().split()))
-ave = round(sum(a)/n)  # 반올림
+# ave = round(sum(a)/n)  # 4.5반올림 안되서 수정
+ave = sum(a)/n
+ave += 0.5
+ave = int(ave)
 min = 2147000000
 for idx, x in enumerate(a):
     tmp = abs(x-ave)  # 절대값
