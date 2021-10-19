@@ -61,13 +61,12 @@
 #     11, 25, 50, 53, 15], [19, 27, 29, 37, 27], [19, 13, 30, 13, 19]]
 # m = 3
 # res = 0
-# for _ in range(3):
+# for _ in range(m):
 #     x, y, z = map(int, input().split())
 #     for i in range(z):
 #         if y == 0:
 #             a[x-1].append(a[x-1].pop(0))
 #         else:
-#             print(a[x-1].pop())
 #             a[x-1].insert(0, a[x-1].pop())
 # for i in range(n):
 #     if i < n//2:
@@ -82,7 +81,7 @@ a = [[10, 13, 10, 12, 15], [12, 39, 30, 23, 11], [
     11, 25, 50, 53, 15], [19, 27, 29, 37, 27], [19, 13, 30, 13, 19]]
 m = 3
 res = 0
-for _ in range(3):
+for _ in range(m):
     x, y, z = map(int, input().split())
     for i in range(z):
         if y == 0:
