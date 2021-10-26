@@ -12,7 +12,8 @@
 
 # solution
 # n, m = map(int, input().split())
-# a = list(map, int(input().split()))
+# a = list(map(int, input().split()))
+
 n, m = 8, 32
 a = [23, 87, 65, 12, 57, 32, 99, 81]
 a.sort()
