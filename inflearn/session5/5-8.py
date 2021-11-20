@@ -17,6 +17,19 @@
 # ▣ 출력예제 1
 # YES
 
+# solution 1
+
+from collections import Counter
+a = 'AbaAeCe'
+b = 'baeeACA'
+res = Counter(a)-Counter(b)
+if len(res) == 0:
+    print('YES')
+else:
+    print('NO')
+
+# solution2
+
 # x = input()
 # y = input()
 a = 'AbaAeCe'
@@ -25,8 +38,10 @@ str1 = dict()
 str2 = dict()
 for x in a:
     str1[x] = str1.get(x, 0)+1
+print(str1)
 for x in b:
     str2[x] = str2.get(x, 0)+1
+print(str2)
 
 for i in str1.keys():
     if i in str2.keys():
